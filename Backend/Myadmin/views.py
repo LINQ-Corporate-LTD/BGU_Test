@@ -5596,12 +5596,39 @@ def send_booking_email(request):
     }, status=400)
 
 #---------------------------- Api For Upload Media ----------------------------#
+# @api_view(['POST'])
+# def send_to_zoho(request):
+#     try:
+#         url = "https://flow.zoho.in/60060817867/flow/webhook/incoming?zapikey=1001.48c7ec6c66f3417f5e4e55f29dce369f.58f387aa65dfaa387287d049417d8d54&isdebug=false"
+
+#         response = requests.post(url, json=request.data)
+
+#         return JsonResponse({
+#             "status": "success",
+#             "zoho_response": response.text
+#         })
+
+#     except Exception as e:
+#         return JsonResponse({
+#             "status": "error",
+#             "message": str(e)
+#         }, status=500)
+
 @api_view(['POST'])
 def send_to_zoho(request):
     try:
         url = "https://flow.zoho.in/60060817867/flow/webhook/incoming?zapikey=1001.48c7ec6c66f3417f5e4e55f29dce369f.58f387aa65dfaa387287d049417d8d54&isdebug=false"
 
-        response = requests.post(url, json=request.data)
+        # ✅ Extract only the inner payload, don't forward the whole wrapper
+        zoho_data = request.data.get("webhookTrigger", {}).get("payload", {})
+
+        zoho_payload = {
+            "webhookTrigger": {
+                "payload": zoho_data
+            }
+        }
+
+        response = requests.post(url, json=zoho_payload)
 
         return JsonResponse({
             "status": "success",
