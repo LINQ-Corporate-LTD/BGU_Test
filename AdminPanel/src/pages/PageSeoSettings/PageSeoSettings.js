@@ -24,6 +24,7 @@ const PAGES = [
   { label: "Media Partners", key: "media-partners" },
   { label: "Contact Us", key: "contact-us" },
   { label: "Agenda", key: "agenda" },
+  { label: "Agenda Page", key: "agenda-page" }, 
   { label: "Venue", key: "venue" },
   { label: "Sponsors", key: "sponsors" },
   { label: "Booking", key: "booking" },
