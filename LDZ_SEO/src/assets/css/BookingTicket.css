@@ -1,0 +1,524 @@
+.BookingFormV2_container__XPZAc {
+    background-color: #f7f7f7;
+    font-family: Inter, sans-serif;
+    padding-bottom: 90px;
+    padding-top: 30px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk {
+    width: 100%;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div {
+    margin: 0 auto;
+    max-width: 1068px;
+    width: 90%;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 {
+    margin-bottom: 30px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_bar__KQ2vi {
+    align-items: center;
+    background-color: #e5e5e5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    height: 60px;
+    padding: 0 40px;
+}
+
+.BookingFormV2_container__XPZAc button,
+.BookingFormV2_container__XPZAc h1,
+.BookingFormV2_container__XPZAc h2,
+.BookingFormV2_container__XPZAc h3,
+.BookingFormV2_container__XPZAc input,
+.BookingFormV2_container__XPZAc label,
+.BookingFormV2_container__XPZAc p,
+.BookingFormV2_container__XPZAc span {
+    font-family: Inter, sans-serif;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_bar__KQ2vi h2 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 30px 40px 40px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L>p {
+    color: #5e5e5e;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 50px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L>p span {
+    color: #e83737;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F:last-child {
+    margin-bottom: 0;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F>div {
+    position: relative;
+    width: 100%;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg {
+    background-color: initial;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    height: 310px;
+    margin: 0;
+    max-width: 775px;
+    overflow: hidden;
+    padding: 40px 40px 30px 75px;
+    position: relative;
+    width: 75%;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_cutout__YBhQ4 {
+    background-color: #fff;
+    border-radius: 60%;
+    height: 65px;
+    left: -35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 65px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_left__9kOyt h1 {
+    color: initial;
+    color: var(--primary-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 47px;
+    font-weight: 300;
+    line-height: 45px;
+    margin: 0;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_left__9kOyt h1 span {
+    color: initial;
+    color: var(--primary-color);
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    margin: 0;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_left__9kOyt p {
+    color: initial;
+    color: var(--primary-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:first-child {
+    width: 160px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:first-child p {
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-weight: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:first-child p:first-child {
+    border-bottom: 1px solid #646464;
+    padding-bottom: 10px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:first-child p span {
+    color: #fff;
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:first-child p:last-child {
+    padding-top: 10px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:last-child img {
+    width: 132px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_cardBar__1C1Kn {
+    background-color: #d6d6d6;
+    border-left: 2px dashed #fff;
+    border-radius: 20px;
+    height: 310px;
+    max-width: 270px;
+    padding: 40px 25px 30px 40px;
+    width: 50%;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_cardBar__1C1Kn .BookingFormV2_content__MGbbj {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_cardBar__1C1Kn .BookingFormV2_content__MGbbj>div:first-child h1 {
+    color: #181818;
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 27px;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_cardBar__1C1Kn .BookingFormV2_content__MGbbj>div:first-child h1 span {
+    color: #181818;
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_cardBar__1C1Kn .BookingFormV2_content__MGbbj>div:first-child p {
+    color: #181818;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_cardBar__1C1Kn .BookingFormV2_content__MGbbj>div>div {
+    margin: 0;
+    padding: 0;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_cardBar__1C1Kn .BookingFormV2_content__MGbbj>div .BookingFormV2_barcodeContainer__GZ5As {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_cardBar__1C1Kn .BookingFormV2_content__MGbbj>div .BookingFormV2_barcodeContainer__GZ5As>img {
+    height: 32px;
+    width: 90px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_cardBar__1C1Kn .BookingFormV2_content__MGbbj>div:first-child div img {
+    height: 20px;
+    width: 90px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_cardBar__1C1Kn .BookingFormV2_content__MGbbj>div:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_cardBar__1C1Kn .BookingFormV2_content__MGbbj>div:last-child img {
+    width: 130px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_enhance__kYOq5 .BookingFormV2_bar__KQ2vi {
+    align-items: center;
+    background-color: #e5e5e5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    height: 60px;
+    padding: 0 40px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_enhance__kYOq5 .BookingFormV2_bar__KQ2vi h2 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_enhance__kYOq5 .BookingFormV2_enhanceInner__Y3fF6 {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 30px 40px 40px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_enhance__kYOq5 .BookingFormV2_enhanceInner__Y3fF6>p {
+    color: #5e5e5e;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    margin: 0;
+    padding: 0;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_enhance__kYOq5 .BookingFormV2_enhanceInner__Y3fF6>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 35px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_enhance__kYOq5 .BookingFormV2_enhanceInner__Y3fF6>div div {
+    align-items: center;
+    display: flex;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_enhance__kYOq5 .BookingFormV2_enhanceInner__Y3fF6>div div input {
+    cursor: pointer;
+    height: 16px;
+    margin-right: 15px;
+    width: 18px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_enhance__kYOq5 .BookingFormV2_enhanceInner__Y3fF6>div div label {
+    color: #5e5e5e;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk .BookingFormV2_submitbtn__5bU6H {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px auto 0;
+    max-width: 1068px;
+    width: 100%;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk .BookingFormV2_submitbtn__5bU6H button {
+    background-color: initial;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    width: 190px;
+}
+
+.BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk .BookingFormV2_submitbtn__5bU6H button:hover {
+    background-color: #e4e4e4 !important;
+    border: 1px solid #0000;
+    color: initial;
+    color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 1140px) {
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_cardBar__1C1Kn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_bar__KQ2vi {
+        padding: 0 30px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L {
+        padding: 23px 30px 30px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_enhance__kYOq5 .BookingFormV2_bar__KQ2vi {
+        padding: 0 30px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_enhance__kYOq5 .BookingFormV2_enhanceInner__Y3fF6 {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_enhance__kYOq5 .BookingFormV2_enhanceInner__Y3fF6>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_enhance__kYOq5 .BookingFormV2_enhanceInner__Y3fF6>div div {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_left__9kOyt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_left__9kOyt h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_left__9kOyt p {
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .BookingFormV2_container__XPZAc {
+        padding: 30px 0;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L>p {
+        margin-bottom: 30px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L>p span {
+        display: block;
+        margin-top: 2px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk .BookingFormV2_submitbtn__5bU6H button {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg {
+        height: 260px;
+        padding: 30px 30px 20px 40px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_left__9kOyt h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:first-child {
+        width: -webkit-max-content;
+        width: max-content;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:first-child p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg {
+        border-radius: 15px;
+        height: 190px;
+        padding: 25px 20px 20px 30px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_cutout__YBhQ4 {
+        height: 40px;
+        left: -16px;
+        width: 36px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_left__9kOyt h1 {
+        font-size: 24px;
+        line-height: 23px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_left__9kOyt p {
+        font-size: 12px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:first-child p {
+        font-size: 11.5px;
+        line-height: 13px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:first-child p:first-child {
+        padding-bottom: 3px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:first-child p:last-child {
+        padding-top: 3px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:last-child {
+        justify-content: flex-end;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi div:last-child img {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg {
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg {
+        height: -webkit-max-content;
+        height: max-content;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj {
+        flex-direction: column;
+        height: -webkit-max-content;
+        height: max-content;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_left__9kOyt p {
+        margin-top: 10px;
+    }
+
+    .BookingFormV2_container__XPZAc .BookingFormV2_engagementContainer__-lusk>div .BookingFormV2_registration__ytui5 .BookingFormV2_registrationInner__Bc37L .BookingFormV2_cardContainer__YEc1F .BookingFormV2_card__nZKbg .BookingFormV2_content__MGbbj .BookingFormV2_right__MCBUi {
+        margin-top: 10px;
+    }
+}

@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import "react-phone-number-input/style.css";
 import { useNavigate } from "react-router-dom";
 import "../assets/css/AddDelegateForm.css";
+import "../../src/assets/css/BookingTicket.css";
 import TextField from "@mui/material/TextField";
 import { getNames } from "country-list";
 import Autocomplete from "@mui/material/Autocomplete";
@@ -20,6 +21,7 @@ import closeBtn from "../assets/WebCommonImages/del-cross.png";
 import toggle from "../assets/WebCommonImages/toggle.png";
 import cardLabel from "../assets/WebCommonImages/card-labels.png";
 import lockIcon from "../assets/WebCommonImages/lock.png";
+import barcodeImage from "../../src/assets/WebCommonImages/hash_code.png";
 import { Helmet } from "react-helmet-async";
 import { usePageSeo } from "../common/usePageSeo";
 const countries = getNames();
@@ -37,6 +39,14 @@ const CompanyRegistrationForm = () => {
   const [showStep2, setShowStep2] = useState(false);
   const [step2Data, setStep2Data] = useState(null);
 
+  // ─── Step 3 state ─────────────────────────────────────────────────────────
+  const [showStep3, setShowStep3] = useState(false);
+  const [step3EngagementOptions, setStep3EngagementOptions] = useState({
+    speaker: false,
+    discussion: false,
+    sponsor: false,
+  });
+
   // ─── Step 2 state (from BookingForm) ──────────────────────────────────────
   const paymentFormRef = useRef(null);
   const discountInputRef = useRef(null);
@@ -48,6 +58,19 @@ const CompanyRegistrationForm = () => {
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 1200,
   );
+
+  const [iconSrcs, setIconSrcs] = useState({
+    plusIcon: '', closeBtn: '', toggle: '', cardLabel: '', lockIcon: '',
+  });
+  useEffect(() => {
+    setIconSrcs({
+      plusIcon: plusIcon?.default || plusIcon || '',
+      closeBtn: closeBtn?.default || closeBtn || '',
+      toggle: toggle?.default || toggle || '',
+      cardLabel: cardLabel?.default || cardLabel || '',
+      lockIcon: lockIcon?.default || lockIcon || '',
+    });
+  }, []);
 
   const createDelegate = (id) => ({
     id,
@@ -907,7 +930,10 @@ const CompanyRegistrationForm = () => {
                 emailResult.error,
               );
             }
-            navigate("/thank-you", { state: { authorized: true } });
+            // ── Show Step 3 screen instead of navigating directly ──
+            setShowStep3(true);
+            setShowStep2(false);
+            window.scrollTo({ top: 0, behavior: "smooth" });
           } else {
             console.log(data?.message);
           }
@@ -922,6 +948,11 @@ const CompanyRegistrationForm = () => {
 
   const handlePaymentError = (error) => {
     console.log("Payment failed:", error);
+  };
+
+  // ─── Step 3: Finish button handler ────────────────────────────────────────
+  const handleFinish = () => {
+    navigate("/thank-you", { state: { authorized: true } });
   };
 
   // ─── Step 2 Order Summary & Ticket SVG (from BookingForm) ─────────────────
@@ -962,11 +993,13 @@ const CompanyRegistrationForm = () => {
       </div>
       <div className="BookingFormV2_summary__t3Eo5">
         <div className="BookingFormV2_toggle__ZtkTL">
-          <img
-            src={toggle}
-            alt="toggle icon"
-            style={{ cursor: "pointer", transform: "rotate3D(0deg)" }}
-          />
+          {iconSrcs.toggle && (
+            <img
+              src={iconSrcs.toggle}
+              alt="toggle icon"
+              style={{ cursor: "pointer", transform: "rotate3D(0deg)" }}
+            />
+          )}
         </div>
         <div className="BookingFormV2_table__yNoVS">
           <div>
@@ -1113,23 +1146,225 @@ const CompanyRegistrationForm = () => {
     </svg>
   );
 
+  // ─── Shared Helmet & layout wrappers ──────────────────────────────────────
+  const SeoHelmet = () => (
+    <Helmet>
+      <title>{seoTitle}</title>
+      <meta name="description" content={seoDesc} />
+      <meta property="og:title" content={seoTitle} />
+      <meta property="og:description" content={seoDesc} />
+      <meta property="og:type" content="website" />
+      {seoImage && <meta property="og:image" content={seoImage} />}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={seoTitle} />
+      <meta name="twitter:description" content={seoDesc} />
+      {seoImage && <meta name="twitter:image" content={seoImage} />}
+      <link rel="canonical" href={canonicalUrl} />
+    </Helmet>
+  );
+
+  const PageFooter = () => (
+    <div className="PageForm_footer__hOO1l">
+      <div
+        className="PageForm_footerInner__5Enax"
+        style={{ maxWidth: "1070px" }}
+      >
+        <p>
+          <span onClick={() => window.open("/privacy-policy", "_blank")}>
+            Privacy Policy
+          </span>
+          <span className="PageForm_divide__vwhn0">|</span>
+          <span onClick={() => window.open("/cookie-policy", "_blank")}>
+            Cookie Policy
+          </span>
+          <span className="PageForm_divide__vwhn0">|</span>
+          <span onClick={() => window.open("https://iq-hub.com/", "_blank")}>
+            IQ International PTe.LTD
+          </span>
+        </p>
+        <p>©2026 Lithium Downstream Summit 2026</p>
+      </div>
+    </div>
+  );
+
+  // ─── Step 3 render (Thank you / registration confirmation screen) ──────────
+  if (showStep3) {
+    return (
+      <>
+        <SeoHelmet />
+        <div id="root">
+          <div className="PageForm_container__NA5Wr">
+            <div className="PageForm_header__7W2Cz">
+              <div
+                className="PageForm_headerInner__sdlhn"
+                style={{ maxWidth: "1070px" }}
+              >
+                <img
+                  onClick={() => navigate("/")}
+                  src={navLogos?.whiteLogo}
+                  alt="Site logo"
+                ></img>
+              </div>
+            </div>
+            <div className="BookingFormV2_container__XPZAc">
+              <div className="BookingFormV2_engagementContainer__-lusk">
+                <div>
+                  {/* ── Registration confirmation cards ── */}
+                  <div className="BookingFormV2_registration__ytui5">
+                    <div className="BookingFormV2_bar__KQ2vi">
+                      <h2>Thank you for your registration</h2>
+                    </div>
+                    <div className="BookingFormV2_registrationInner__Bc37L">
+                      <p>
+                        Your transaction ID:{" "}
+                        <span>{step2Data?.uniqueInvoiceNo || ""}</span>
+                      </p>
+
+                      {/* Render one card per delegate */}
+                      {delegates.map((delegate, index) => (
+                        <div key={delegate.id} className="BookingFormV2_cardContainer__YEc1F">
+                          <div className="BookingFormV2_card__nZKbg">
+                            <div className="BookingFormV2_cutout__YBhQ4"></div>
+                            <div className="BookingFormV2_content__MGbbj">
+                              <div className="BookingFormV2_left__9kOyt">
+                                <h1>
+                                  {delegate.firstName}
+                                  <span>{delegate.lastName}</span>
+                                </h1>
+                                <p>delegate pass</p>
+                              </div>
+                              <div className="BookingFormV2_right__MCBUi">
+                                <div>
+                                  <p>
+                                    Date:
+                                    <span>{eventDetails?.eventDate || ""}</span>
+                                  </p>
+                                  <p>
+                                    Location:
+                                    <span>{eventDetails?.eventShortLocation || ""}</span>
+                                  </p>
+                                </div>
+                                <div>
+                                  <img
+                                    src={navLogos?.whiteLogo}
+                                    alt="Logo Image"
+                                  ></img>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="BookingFormV2_cardBar__1C1Kn">
+                            <div className="BookingFormV2_content__MGbbj">
+                              <div>
+                                <h1>
+                                  {delegate.firstName}
+                                  <span>{delegate.lastName}</span>
+                                </h1>
+                                <p>delegate pass</p>
+                                <div className="BookingFormV2_barcodeContainer__GZ5As">
+                                  <img
+                                    src={barcodeImage}
+                                    alt="Barcode"
+                                    width="90"
+                                    height="32"
+                                  ></img>
+                                </div>
+                              </div>
+                              <div>
+                                <img
+                                  src={navLogos?.blackLogo}
+                                  alt="Logo Image"
+                                ></img>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* ── Enhance your engagement ── */}
+                  <div className="BookingFormV2_enhance__kYOq5">
+                    <div className="BookingFormV2_bar__KQ2vi">
+                      <h2>Enhance your engagement</h2>
+                    </div>
+                    <div className="BookingFormV2_enhanceInner__Y3fF6">
+                      <p>
+                        Take your networking experience to the next level with
+                        our enhanced engagement. Choose an option, and our team
+                        will reach out to explore the opportunities.
+                      </p>
+                      <div>
+                        <div>
+                          <input
+                            type="checkbox"
+                            id="speaker"
+                            value="speaker"
+                            checked={step3EngagementOptions.speaker}
+                            onChange={(e) =>
+                              setStep3EngagementOptions((prev) => ({
+                                ...prev,
+                                speaker: e.target.checked,
+                              }))
+                            }
+                          />
+                          <label htmlFor="speaker">Become a Speaker</label>
+                        </div>
+                        <div>
+                          <input
+                            type="checkbox"
+                            id="discussion"
+                            value="discussion"
+                            checked={step3EngagementOptions.discussion}
+                            onChange={(e) =>
+                              setStep3EngagementOptions((prev) => ({
+                                ...prev,
+                                discussion: e.target.checked,
+                              }))
+                            }
+                          />
+                          <label htmlFor="discussion">
+                            Join a Panel Discussion
+                          </label>
+                        </div>
+                        <div>
+                          <input
+                            type="checkbox"
+                            id="sponsor"
+                            value="sponsor"
+                            checked={step3EngagementOptions.sponsor}
+                            onChange={(e) =>
+                              setStep3EngagementOptions((prev) => ({
+                                ...prev,
+                                sponsor: e.target.checked,
+                              }))
+                            }
+                          />
+                          <label htmlFor="sponsor">Sponsor the Show</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* ── Finish button ── */}
+                  <div className="BookingFormV2_submitbtn__5bU6H">
+                    <button onClick={handleFinish}>Finish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <PageFooter />
+          </div>
+        </div>
+      </>
+    );
+  }
+
   // ─── Step 2 render (BookingForm UI) ───────────────────────────────────────
   if (showStep2) {
     return (
       <>
-        <Helmet>
-          <title>{seoTitle}</title>
-          <meta name="description" content={seoDesc} />
-          <meta property="og:title" content={seoTitle} />
-          <meta property="og:description" content={seoDesc} />
-          <meta property="og:type" content="website" />
-          {seoImage && <meta property="og:image" content={seoImage} />}
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content={seoTitle} />
-          <meta name="twitter:description" content={seoDesc} />
-          {seoImage && <meta name="twitter:image" content={seoImage} />}
-          <link rel="canonical" href={canonicalUrl} />
-        </Helmet>
+        <SeoHelmet />
         <div id="root">
           <div className="PageForm_container__NA5Wr">
             <div className="PageForm_header__7W2Cz">
@@ -1213,7 +1448,7 @@ const CompanyRegistrationForm = () => {
                     <div className="BookingFormV2_paymentOptionsInner__YVwZU">
                       <div className="BookingFormV2_imagesContainer__Ko5GY">
                         <p>We accept all major credit and debit cards.</p>
-                        <img src={cardLabel} alt="credit card logo"></img>
+                        {iconSrcs.cardLabel && <img src={iconSrcs.cardLabel} alt="credit card logo" />}
                       </div>
                       <div>
                         <div className="stripe-input-container">
@@ -1238,7 +1473,7 @@ const CompanyRegistrationForm = () => {
                             onClick={handlePaymentClick}
                             disabled={paymentFormRef.current?.isProcessing}
                           >
-                            <img src={lockIcon} alt=""></img>
+                            {iconSrcs.lockIcon && <img src={iconSrcs.lockIcon} alt="" />}
                             {paymentFormRef.current?.isProcessing
                               ? "Processing..."
                               : "Pay Securely Now"}
@@ -1295,7 +1530,13 @@ const CompanyRegistrationForm = () => {
                     Cookie Policy
                   </span>
                   <span className="PageForm_divide__vwhn0">|</span>
-                  <span onClick={() => window.open("https://iq-hub.com/", "_blank")}>IQ International PTe.LTD</span>
+                  <span
+                    onClick={() =>
+                      window.open("https://iq-hub.com/", "_blank")
+                    }
+                  >
+                    IQ International PTe.LTD
+                  </span>
                 </p>
                 <p>©2026 Lithium Downstream Summit 2026</p>
               </div>
@@ -1309,19 +1550,7 @@ const CompanyRegistrationForm = () => {
   // ─── Step 1 render (CompanyRegistrationForm UI) ───────────────────────────
   return (
     <>
-      <Helmet>
-        <title>{seoTitle}</title>
-        <meta name="description" content={seoDesc} />
-        <meta property="og:title" content={seoTitle} />
-        <meta property="og:description" content={seoDesc} />
-        <meta property="og:type" content="website" />
-        {seoImage && <meta property="og:image" content={seoImage} />}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={seoTitle} />
-        <meta name="twitter:description" content={seoDesc} />
-        {seoImage && <meta name="twitter:image" content={seoImage} />}
-        <link rel="canonical" href={canonicalUrl} />
-      </Helmet>
+      <SeoHelmet />
       <div id="root">
         <div className="PageForm_container__NA5Wr">
           <div className="PageForm_header__7W2Cz">
@@ -1676,7 +1905,7 @@ const CompanyRegistrationForm = () => {
                                 className="BookingFormV2_delBtn__3MPla"
                                 onClick={() => removeDelegate(delegate.id)}
                               >
-                                <img src={closeBtn} alt="closeBtn"></img>
+                                {iconSrcs.closeBtn && <img src={iconSrcs.closeBtn} alt="closeBtn" />}
                               </Button>
                             </div>
                           )}
@@ -2011,7 +2240,7 @@ const CompanyRegistrationForm = () => {
                       className="BookingFormV2_delBtn__3MPla"
                       onClick={addDelegate}
                     >
-                      <img src={plusIcon?.default || plusIcon} alt="plusIcon" />
+                      {iconSrcs.plusIcon && <img src={iconSrcs.plusIcon} alt="plusIcon" />}
                       Add Delegate
                     </Button>
                   </div>
@@ -2056,25 +2285,7 @@ const CompanyRegistrationForm = () => {
               </div>
             </div>
           </div>
-          <div className="PageForm_footer__hOO1l">
-            <div
-              className="PageForm_footerInner__5Enax"
-              style={{ maxWidth: "1070px" }}
-            >
-              <p>
-                <span onClick={() => window.open("/privacy-policy", "_blank")}>
-                  Privacy Policy
-                </span>
-                <span className="PageForm_divide__vwhn0">|</span>
-                <span onClick={() => window.open("/cookie-policy", "_blank")}>
-                  Cookie Policy
-                </span>
-                <span className="PageForm_divide__vwhn0">|</span>
-                <span onClick={() => window.open("https://iq-hub.com/", "_blank")}>IQ International PTe.LTD</span>
-              </p>
-              <p>©2026 Lithium Downstream Summit 2026</p>
-            </div>
-          </div>
+          <PageFooter />
         </div>
       </div>
     </>
