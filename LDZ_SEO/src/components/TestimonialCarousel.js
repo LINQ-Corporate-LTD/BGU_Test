@@ -210,7 +210,7 @@ export default function TestimonialCarousel() {
                         <img src={quotationIcon} alt="Quotation icon"></img>
                         <p>{testimonialItem?.personMessage}</p>
                         <h5>{testimonialItem?.personName}</h5>
-                        <h5 style={{ color: "var(--primary-color)" }}>{testimonialItem?.personCompany}</h5>
+                        <h5 style={{ color: "var(--yellow-theme-color)" }}>{testimonialItem?.personCompany}</h5>
                       </div>
                     ))}
                   </Slider>
@@ -236,7 +236,7 @@ export default function TestimonialCarousel() {
                         <img src={quotationIcon} alt="Quotation icon"></img>
                         <p>{testimonialItem?.personMessage}</p>
                         <h5>{testimonialItem?.personName}</h5>
-                        <h5 style={{ color: "var(--primary-color)" }}>{testimonialItem?.personCompany}</h5>
+                        <h5 style={{ color: "var(--yellow-theme-color)" }}>{testimonialItem?.personCompany}</h5>
                       </div>
                     ))}
                   </Slider>
@@ -262,7 +262,7 @@ export default function TestimonialCarousel() {
                         <img src={quotationIcon} alt="Quotation icon"></img>
                         <p>{testimonialItem?.personMessage}</p>
                         <h5>{testimonialItem?.personName}</h5>
-                        <h5 style={{ color: "var(--primary-color)" }}>{testimonialItem?.personCompany}</h5>
+                        <h5 style={{ color: "var(--yellow-theme-color)" }}>{testimonialItem?.personCompany}</h5>
                       </div>
                     ))}
                   </Slider>

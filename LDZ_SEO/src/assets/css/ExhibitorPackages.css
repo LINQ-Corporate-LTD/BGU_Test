@@ -628,7 +628,7 @@
   background-color: var(--primary-color);
   border: none;
   border-radius: 2px;
-  color: #ffffff;
+  color: var(--yellow-theme-text-color);
   cursor: pointer;
   display: block;
   font-size: 16px;
@@ -815,7 +815,7 @@
 }
 
 .SponsorLanding_container__bsWcn .SponsorLanding_sponsorshipOptions__DX3F6 {
-  background-color: var(--primary-color);
+  background-color: var(--yellow-theme-color);
   padding: 100px 0;
   width: 100%;
 }
@@ -926,7 +926,7 @@
 .SponsorshipCard_container__ORwTn .SponsorshipCard_button__3kvwB {
   background-color: var(--primary-color);
   border: none;
-  color: #fff;
+  color: var(--yellow-theme-text-color);
   cursor: pointer;
   display: block;
   font-size: 16px;

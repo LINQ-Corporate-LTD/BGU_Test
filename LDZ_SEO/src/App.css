@@ -7,6 +7,8 @@
   --secondary-color: #0f0f0f;
   --dark-color: #2177d8;
   --light-color: #ffffff;
+  --yellow-theme-color: #e2da08;
+  --yellow-theme-text-color: #080808;
   --linearGradient-color: linear-gradient(107deg, rgba(0, 0, 0, 0.60) -2.13%, rgba(0, 0, 0, 0.60) 35.42%, rgba(39, 141, 255, 0.60) 77.97%, rgba(39, 141, 255, 0.60) 125.13%);
 }
 

@@ -109,7 +109,7 @@
 }
 
 .SubscribeforUpdates_updatesContainer__DD3wT>div>div form .SubscribeforUpdates_from__REPoW button {
-    background-color: var(--primary-color);
+    background-color: var(--yellow-theme-color);
     border: none;
     border-radius: 2px;
     color: #fff;
@@ -124,8 +124,8 @@
 
 .SubscribeforUpdates_updatesContainer__DD3wT>div>div form .SubscribeforUpdates_from__REPoW button:hover {
     background-color: #fff;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 1px solid var(--yellow-theme-color);
+    color: var(--yellow-theme-color);
 }
 
 @media only screen and (max-width: 1619px) {

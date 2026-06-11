@@ -821,7 +821,7 @@
 
 /* SponsorsScreen_exhibitCardContainer__6IHeV h2 */
 .SponsorsScreen_exhibitCardContainer__6IHeV h2 {
-    color: rgb(255, 255, 255);
+    color: var(--yellow-theme-text-color);
     font-size: 36px;
     font-weight: 800;
     line-height: 32px;
@@ -945,7 +945,7 @@
 }
 
 .SponsorsScreen_container__a4ngc .SponsorsScreen_sponsorsHelp__-E0Kh>div .SponsorsScreen_card__EoH0S svg {
-    fill: var(--primary-color);
+    fill: var(--yellow-theme-color);
     object-fit: contain;
 }
 

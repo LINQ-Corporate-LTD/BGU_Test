@@ -166,7 +166,7 @@
 }
 
 .HomeScreen_registerSection__LKEHw .HomeScreen_registerContainer__X9V4n .HomeScreen_cardContainer__dWb-Q .HomeScreen_card__eORgl button {
-    background-color: var(--primary-color);
+    background-color: var(--yellow-theme-color);
     border: none;
     border-radius: 2px;
     color: #fff;
@@ -183,9 +183,9 @@
 
 .HomeScreen_registerSection__LKEHw .HomeScreen_registerContainer__X9V4n .HomeScreen_cardContainer__dWb-Q .HomeScreen_card__eORgl button:hover {
     background-color: #fff !important;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--yellow-theme-color);
     border-color: initial;
-    color: var(--primary-color);
+    color: var(--yellow-theme-color);
 }
 
 .HomeScreen_registerSection__LKEHw .HomeScreen_registerContainer__X9V4n .HomeScreen_cardContainer__dWb-Q .HomeScreen_card__eORgl h3 {

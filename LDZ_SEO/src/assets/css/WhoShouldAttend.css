@@ -133,8 +133,7 @@
 }
 
 .BenefitScreen_container__MwDLs .BenefitScreen_attendeesSection__2a94I h2 {
-    color: #181818;
-    color: #fff;
+    color: var(--yellow-theme-text-color);
     font-size: 36px;
     font-weight: 800;
     line-height: 36px;
@@ -148,7 +147,7 @@
 }
 
 .BenefitScreen_container__MwDLs .BenefitScreen_attendeesSection__2a94I>span>p {
-    color: #fff;
+    color: var(--yellow-theme-text-color);
     font-size: 16px;
     font-weight: 500;
     -webkit-hyphens: none;
